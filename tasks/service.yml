@@ -1,6 +1,6 @@
 ---
 - name: service - ensure apache is running
-  service: name=apache2 state=started enabled=yes
+  service: name=httpd state=started enabled=yes
   when: passenger_webserver == "apache"
 
 - name: service - ensure nginx is running
